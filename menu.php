@@ -11,8 +11,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <!--CSS-->
         <link rel="stylesheet" type="text/css" href="style.css">
-
-        <title>F@stochePC11</title>
+        <!--Javascript-->
+        <script type="text/javascript" src="script.js"></script>
     </head>
 
     <body>
