@@ -6,7 +6,6 @@ require 'menu.php'; ?>
 <section class="container">
     <!--Titre de la page-->
     <h1>Mentions légales</h1>
-    <hr />
 
     <div class="siren">
         <p>Sylvie BOULONNOIS<br>SIREN : 813244944<br>SIRET : 81324494400019<br>APE : 6209Z</p>

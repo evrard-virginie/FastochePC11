@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
     <html lang="fr">
     <head>
@@ -10,9 +9,9 @@
         <!--Bootstrap Icon-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <!--CSS-->
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.php" >
         <!--Javascript-->
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" media="screen" src="script.php"></script>
     </head>
 
     <body>

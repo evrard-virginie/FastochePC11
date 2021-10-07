@@ -1,5 +1,6 @@
 <?php
-require 'menu.php'; ?>
+require 'menu.php';
+?>
 <title>F@stochePC11</title>
 
     <h1>Bienvenue !</h1> 

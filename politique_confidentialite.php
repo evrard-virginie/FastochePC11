@@ -5,7 +5,6 @@ require 'menu.php'; ?>
 
 <section class="container">
     <h1>Politique de confidentialité</h1>
-    <hr />
         
         <p id="politiqueConfidentialite">La société F@stochePC11 s'efforce d'accorder une importance primordiale au respect de la vie privée de ses clients et prospects, des utilisateurs du site internet qu'elle gère et de la confidentialité de leurs données personnelles. </p>
         <p>F@stochePC11 s’engage à traiter les données qu'elle traite, dans le respect de la règlementation applicable tels que la loi n° 2018-493 du 20 juin 2018 relative à l'informatique, aux fichiers et aux libertés et du règlement général sur la protection des données à caractère personnel (règlement général sur la protection des données : RGPD).</p>

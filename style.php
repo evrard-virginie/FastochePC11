@@ -1,0 +1,202 @@
+<?php
+header("Content-type: text/css"); 
+require_once("menu.php");
+?>
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: inherit;
+}
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+}
+a {
+    color: #dde7a9;
+    text-decoration: none;
+}
+a:hover {
+    color: #fff;
+}
+h1 {
+    color: #dde7a9;
+    margin-top: 35px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #666;
+    margin-bottom: 15px;
+}
+
+/* MENU */
+/* Couleur de fond du menu */
+.navbar {
+    background-color: #666;
+    padding-top: 15px;
+}
+/* F@stochePC11 */
+#fastocheHome {
+    color: #dde7a9;
+    font-size: 30px;
+    margin-left: 25px;
+}
+#fastocheHome:hover {
+    color: #fff;
+}
+
+.nav-item {
+    font-size: 20px;
+    list-style-type: none;
+}
+/* vue mobile - lien menu */
+@media (max-width:700px) {
+    .nav-item {
+        font-size: 15px;
+        list-style-type: none;
+    }
+}
+ 
+/* PAGE ACCUEIL */
+/* h1 de la page d'accueil */
+#home {
+    color: #fff;
+    margin: 0px;
+    background: #666;
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing: 1px;
+
+}
+
+/* Texte de la page accueil */
+#presentation {
+    text-align: center;
+    color: #fff;
+    background: #666;
+    padding-top: 25px; 
+    padding-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+/* Carousel */
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#666, transparent);
+}
+/* vue mobile le carousel n'est pas affiché */
+@media (max-width:700px) {
+    .container1 {
+        display: none!important;
+    }
+}
+.carousel-inner > .carousel-item > img {
+    margin: 0 auto;
+    border-radius: 10px;
+}
+#carouselSlides {
+    margin-top: 30px;
+}
+
+/* Section contenant dépannage informatique, initiation à l'informatique, analyse et sauvegarde */
+#columm {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.imageHome{
+    border-radius: 10px;
+}
+h4 {
+    margin-top: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #666;
+}
+.textHome {
+    margin-top: 15px;
+}
+
+/* PAGE A PROPOS */
+.a_propos {
+    margin-top: 30px;
+}
+
+/* PAGE CONTACT */
+.contact {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.mb-3 {
+    padding-bottom: 15px;
+}
+/* Bouton envoyer */
+.btn-contact {
+    margin-bottom: 55px;
+    color: #fff;
+    background-color: #dde7a9;
+    border: #fff ;
+    font-weight: bold;
+    text-shadow: 2px 1px 1px #666;
+    letter-spacing: 1px;
+}
+.btn-contact:hover {
+    color: #dde7a9;
+    background-color: #fff;
+    border: #dde7a9 1px solid;
+}
+
+/* PAGE POLITIQUE DE CONFIDENTIALITE */
+#politiqueConfidentialite {
+    margin-top: 30px;
+}
+.article {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+h5 {
+    font-weight: bold;
+}
+#lienCNIL {
+    color: #666;
+}
+#lienCNIL:hover {
+    color: black;
+
+}
+#finTexteConfidentialite {
+    margin-bottom: 35px;
+}
+
+/* PAGE MENTIONS LEGALES */
+.siren {
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+.mentions {
+    margin-top: 30px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #666;
+    text-align: center; 
+    padding-top: 10px;
+}
+#copyright {
+    color: #fff;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9hc3NldHMvc3R5bGVzL2FwcC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSwyQkFBMkI7QUFDL0IiLCJmaWxlIjoiYXBwLmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGxpZ2h0Z3JheTtcbn1cblxuIl0sInNvdXJjZVJvb3QiOiIifQ==*/

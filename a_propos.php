@@ -5,7 +5,6 @@ require 'menu.php'; ?>
 
 <section class="container">
         <h1>A PROPOS </h1>
-            <hr />
             <div class="a_propos">    
                 <p>Je m'appelle Sylvie BOULONNOIS, Micro-entrepreneure du côté de Narbonne, je suis avant tout une passionnée d'informatique et des nouvelles technologies. J'ai été aussi administratrice système réseaux et j'ai pris en charge la maintenance informatique d'établissements scolaires dans le cadre de missions académiques.</p>
                 <p>En 2015, j'ai fondé F@stochePC11 une société orientée sur le dépannage et la maintenance informatique. S'adressant aux particuliers comme aux professionnels. J'ai donc décidé de mettre mon expérience au service de chacun en proposant des prestations simples couvrant les besoins les plus communs.</p>
