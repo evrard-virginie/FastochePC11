@@ -11,7 +11,7 @@ require 'menu.php'; ?>
         <p>Sylvie BOULONNOIS<br>SIREN : 813244944<br>SIRET : 81324494400019<br>APE : 6209Z</p>
     </div>
 
-    <div class="loi">
+    <article class="loi">
         <h3 class="article">En application de la loi n°2004-575 du 21 juin 2004 relative à la confiance dans l’économie numérique, vous trouverez ci-dessous les informations légales concernant ce site :</h3>
             <h5 class="mentions">Protection des données personnelles</h5>
                 <p>Conformément à la loi Informatique et Libertés du 6 janvier 1978 (art. 34), vous disposez d’un droit d’accès, de rectification ou de suppression concernant les données personnelles que nous pourrions être amenés à recueillir (données renseignées par vous).</p>
@@ -53,7 +53,7 @@ require 'menu.php'; ?>
             <h5 class="mentions">Réalisation, hébergement du site</h5>
                 <p>Le site est réalisé par Mme Evrard Virginie<br>Développeuse Web<br>SIREN: 808 383 335<br>SIRET: 808 383 335 00029<br>APE: 6201Z</p>
                 <p>Il est hébergé par Lws.fr<br>Société Ligne Web Services<br>10 rue Penthièvre<br>75008 Paris<br>France<br>Téléphone: +33 01 77 62 30 03</p>
-    </div>
+    </article>
 </section>
    
 

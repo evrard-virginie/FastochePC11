@@ -2,6 +2,7 @@
 header("Content-type: text/javascript"); 
 require_once("menu.php");
 ?>
+/** JAVASCRIPT */
 /**Pour valider le formulaire de contact */
 (function () {
     'use strict'

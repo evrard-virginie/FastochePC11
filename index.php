@@ -3,13 +3,15 @@ require 'menu.php';
 ?>
 <title>F@stochePC11</title>
 
-    <h1>Bienvenue !</h1> 
+    <header>
+        <h1 id="home">Bienvenue !</h1> 
 
-    <div id="presentation">
-        <p>Tout d'abord, je vous remercie pour votre visite sur mon site. Je vous invite à découvrir les différentes rubriques qui s'offrent à vous.</p>
-        <p>Le moyen le plus simple est de passer en revue la barre de menu. Vous pouvez aussi, aller d'une page à l'autre au gré de vos envies et de vos curiosités.</p>
-        <p>Dans quelques minutes, vous en saurez plus sur  moi et sur mes prestations.</p>
-    </div>
+        <div id="presentation">
+            <p>Tout d'abord, je vous remercie pour votre visite sur mon site. Je vous invite à découvrir les différentes rubriques qui s'offrent à vous.</p>
+            <p>Le moyen le plus simple est de passer en revue la barre de menu. Vous pouvez aussi, aller d'une page à l'autre au gré de vos envies et de vos curiosités.</p>
+            <p>Dans quelques minutes, vous en saurez plus sur  moi et sur mes prestations.</p>
+        </div>
+    </header>
 
     <!-- Carousel - vue mobile le carousel n'apparaît pas -->
     <section class="container1">
@@ -51,4 +53,5 @@ require 'menu.php';
 
 
 <?php
-require 'footer.php'; ?>
+require 'footer.php'; 
+?>

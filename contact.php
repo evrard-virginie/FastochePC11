@@ -43,7 +43,7 @@ require 'menu.php'; ?>
   
         <div class="mb-3 form-check">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">Accepte la politique de confidentialité et les mentions légales du site F@stochePC11</label>
+            <label class="form-check-label" for="invalidCheck">Accepte la politique de confidentialité et les mentions légales du site F@stochePC11.com</label>
                 <div class="invalid-feedback">Vous devez accepter avant de soumettre le formulaire.</div>
         </div>
     <button type="submit" class="btn-contact btn-lg">ENVOYER</button>

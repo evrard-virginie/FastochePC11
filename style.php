@@ -1,26 +1,19 @@
 <?php
 header("Content-type: text/css"); 
-require_once("menu.php");
-?>
+require_once("menu.php"); ?>
 
-html {
-    height: 100%;
-    box-sizing: border-box;
-}
-body {
-    height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+/* CSS */
+* {
     margin: 0;
     padding: 0;
 }
-* {
-    box-sizing: inherit;
+html {
+    height: 100%;
 }
-.wrapper {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto; 
+body {
+    font-familly: Arial, Helvetica, sans-serif;
 }
+
 a {
     color: #dde7a9;
     text-decoration: none;
@@ -45,23 +38,23 @@ h1 {
 /* F@stochePC11 */
 #fastocheHome {
     color: #dde7a9;
-    font-size: 30px;
+    font-size: 35px;
     margin-left: 25px;
 }
 #fastocheHome:hover {
     color: #fff;
 }
-
-.nav-item {
+/* Menu lien a propos et contact */
+div .collapse li .nav-link {
+    color:#dde7a9;
     font-size: 20px;
-    list-style-type: none;
+    margin-right: 40px;
 }
-/* vue mobile - lien menu */
-@media (max-width:700px) {
-    .nav-item {
-        font-size: 15px;
-        list-style-type: none;
-    }
+div .collapse li .nav-link:hover {
+    color: #fff;
+}
+li { 
+    list-style-type: none;
 }
  
 /* PAGE ACCUEIL */
@@ -128,6 +121,10 @@ h4 {
 /* PAGE A PROPOS */
 .a_propos {
     margin-top: 30px;
+    font-size: 20px;
+}
+.text_a_propos {
+    margin-bottom: 30px;
 }
 
 /* PAGE CONTACT */
@@ -140,7 +137,7 @@ h4 {
 }
 /* Bouton envoyer */
 .btn-contact {
-    margin-bottom: 55px;
+    margin-bottom: 40px;
     color: #fff;
     background-color: #dde7a9;
     border: #fff ;
@@ -191,7 +188,9 @@ h5 {
     background-color: #666;
     text-align: center; 
     padding-top: 10px;
+    
 }
+
 #copyright {
     color: #fff;
     margin-bottom: 0;
@@ -199,4 +198,3 @@ h5 {
 }
 
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9hc3NldHMvc3R5bGVzL2FwcC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSwyQkFBMkI7QUFDL0IiLCJmaWxlIjoiYXBwLmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGxpZ2h0Z3JheTtcbn1cblxuIl0sInNvdXJjZVJvb3QiOiIifQ==*/
