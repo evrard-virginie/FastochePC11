@@ -14,7 +14,7 @@
     $text = stripslashes($text);
 
     //Destinataire et objet du message
-    $to = "contact@fastochepc11.com";
+    $to = "xxxxx@xxx.xxx";
     $subject = "Formulaire de contact du site F@stochepc11";
 
     //En-tête masqué (codage de caractères)
