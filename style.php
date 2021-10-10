@@ -12,6 +12,9 @@ html {
 }
 body {
     font-familly: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -188,6 +191,7 @@ h5 {
     background-color: #666;
     text-align: center; 
     padding-top: 10px;
+    margin-top: auto;
     
 }
 
