@@ -16,9 +16,9 @@ include ('contact.inc.php');
         $text = "Mon message : $validationMessage\n";
         $text = stripslashes($text);
 
-        //Destinataire et objet du message
-        $to = "virginie.seat@gmail.com";
-        $subject = "Formulaire de contact du site F@stochepc11";
+    //Destinataire et objet du message
+    $to = "xxxxx@xxx.xxx";
+    $subject = "Formulaire de contact du site F@stochepc11";
 
         //En-tête masqué (codage de caractères), pour envoyer un email HTML
         $headers[] = 'MIME-Version:1.0';
