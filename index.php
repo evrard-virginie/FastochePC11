@@ -4,6 +4,7 @@ require 'menu.php';
 <title>F@stochePC11</title>
 
     <header>
+    
         <h1 id="home">Bienvenue !</h1> 
 
         <div id="presentation">

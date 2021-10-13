@@ -1,5 +1,7 @@
-<?php
-require 'menu.php'; ?>
+<?php require 'menu.php'; 
+include ('fonctions.inc.php');
+?>
+
 
 <title>CONTACT</title>
  
@@ -11,19 +13,21 @@ require 'menu.php'; ?>
     <p>Vous souhaitez me confier votre projet ? </br>En savoir plus sur moi ? </br>N'hésitez pas à m'écrire via le formulaire ci-dessous.</p>
     </div>
 
-    <form method="POST" action="envoi.php" class="needs-validation" novalidate>
+    <!--Formulaire de contact-->
+    <form method="post" action="envoi.php" class="was-validated">
         <div class="mb-3">
             <label for="validationName" class="form-label">Votre prénom</label>
-                <div class="input-group has-validation">
-                    <input type="text" name="validationName" class="form-control" id="InputPrenom" aria-describedby="Votre prénom" pattern="[A-z] {30}" autofocus required> 
-                    <div class="invalid-feedback">Veuillez écrire votre prénom</div> 
+                <div class="input-group">
+                    <input type="text" name="validationName" class="form-control" value="<?php echo vers_formulaire1($validationName) ?>" aria-describedby="Votre prénom" autofocus required> 
+                    <?php if(empty($erreur)) echo '<p class="error">', $erreur, '</p>' ?>
                 </div>
+                
         </div>
 
         <div class="mb-3">
             <label for="validationInputEmail" class="form-label">Votre adresse de messagerie</label>
-            <input type="email" name="validationInputEmail" class="form-control" id="InputEmail" aria-describedby="Votre Email" required>
-                <div class="invalid-feedback">Veuillez écrire votre email</div>   
+            <input type="email" name="validationInputEmail" class="form-control" value="<?php echo vers_formulaire2($validationInputEmail) ?>" aria-describedby="Votre Email" required>
+            <?php if(empty($erreur)) echo '<p class="error">', $erreur, '</p>' ?>
         </div>
 
         <div class="mb-3">
@@ -37,17 +41,19 @@ require 'menu.php'; ?>
 
         <div class="mb-3">
             <label for="validationMessage">Votre message</label>
-            <textarea class="form-control" name="validationMessage" id="InputMessage" aria-describedby="Votre message" maxlength="350" required></textarea>
-            <div class="valid-feedback">Cela semble bon !</div> 
+            <textarea class="form-control" name="validationMessage" value="<?php echo vers_formulaire3($validationMessage) ?>" aria-describedby="Votre message" required></textarea> 
+            <?php if(empty($erreur)) echo '<p class="error">', $erreur, '</p>' ?>
         </div>
   
         <div class="mb-3 form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">Accepte la politique de confidentialité et les mentions légales du site F@stochePC11.com</label>
-                <div class="invalid-feedback">Vous devez accepter avant de soumettre le formulaire.</div>
+            <input class="form-check-input" type="checkbox" value="<?php echo ($validationTerms) ?>" required>
+            <label for="validationTerms" class="form-check-label" for="invalidCheck">Accepte la politique de confidentialité et les mentions légales du site F@stochePC11.com</label>
+            <?php if(empty($erreur)) echo '<p class="error">', $erreur, '</p>' ?>
         </div>
-    <button type="submit" class="btn-contact btn-lg">ENVOYER</button>
-</form>
+
+        <button type="submit" name="soumettre" value="OK" class="btn-contact btn-lg">ENVOYER</button>
+        
+    </form>
 </section>
 
 <?php

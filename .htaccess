@@ -1,0 +1,45 @@
+#Page d'erreur personnalisée
+#ErrorDocument 401 /error/401.php
+#ErrorDocument 403 /error/403.php
+#ErrorDocument 404 /error/404.php
+#ErrorDocument 500 /error/500.php
+
+#Configuration fuseau horaire sur le serveur
+SetEnv TZ Europe/Paris
+
+#Bloquer des adresses IP
+#allow from allow
+#deny from 1.1.1.1.1
+#deny from 1.1.1.1.1
+
+#Redirections permanentes
+#Redirect 301 /mapage.html http://www.monsite.com/manouvellepage.html
+
+#Redirections de domaine
+#RewriteCond %{HTTP_HOST} ^www.mon-site.com [NC]
+#RewriteRule ^(.*)$ http://www.mon-site.fr/$1 [QSA,R=301]
+
+
+#Page par défaut
+DirectoryIndex index.php
+
+#Masquer ou afficher les erreurs php
+php_flag display_errors off
+
+# Suivre les liens symboliques
+Options +FollowSymLinks
+
+# Mise en cache
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 10080 minutes"
+    ExpiresByType image/jpg "access plus 10080 minutes"
+    ExpiresByType text/css "access plus 10080 minutes"
+    ExpiresByType text/javascript "access plus 10080 minutes"
+</IfModule>
+
+# Masquer le htaccess
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>

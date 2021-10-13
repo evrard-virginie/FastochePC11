@@ -8,7 +8,7 @@ require_once("menu.php");
     'use strict'
   
     // Récupère les données du formulaire et applique les styles de validation de Bootstrap
-    var forms = document.querySelectorAll('.needs-validation')
+    var forms = document.querySelectorAll('.was-validated')
   
     // Boucle sur le formulaire et empêche la soumission si les données ne sont pas rempli correctement
     Array.prototype.slice.call(forms)

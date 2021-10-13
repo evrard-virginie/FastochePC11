@@ -1,6 +1,7 @@
 <?php
 header("Content-type: text/css"); 
-require_once("menu.php"); ?>
+require_once("menu.php");
+?>
 
 /* CSS */
 * {
