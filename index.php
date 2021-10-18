@@ -1,7 +1,9 @@
 <?php
 require 'menu.php';
 ?>
-<title>F@stochePC11</title>
+<head>
+    <title>F@stochePC11 - Accueil</title>
+</head>
 
     <header>
     
@@ -19,13 +21,13 @@ require 'menu.php';
         <div id="carouselSlides" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/slide1.jpg" class="d-block w-90" alt="slide1">
+                    <img src="images/slide1.jpg" class="d-block w-90" alt="Image sur le service à la personne pour la réduction d'impôt de 50%">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/slide2.jpg" class="d-block w-90" alt="slide2">
+                    <img src="images/slide2.jpg" class="d-block w-90" alt="Image d'illustration représentant l'initiation à l'informatique">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/slide3.jpg" class="d-block w-90" alt="slide3">
+                    <img src="images/slide3.jpg" class="d-block w-90" alt="Image d'illustration représentant le dépannage informatique">
                 </div>
             </div>
         </div>
@@ -35,20 +37,20 @@ require 'menu.php';
     <section class="container" id="columm">
         <div class="row">
             <div class="col-sm">
-                <img class="imageHome" src="images/depannage.jpg" alt="depannage informatique">
-                  <h4>Dépannage informatique</h4>
+                <img class="imageHome" src="images/depannage.jpg" alt="Image qui défini la catégorie depannage informatique">
+                  <figcaption>Dépannage informatique</figcaption>
                     <p class="textHome">Quelque soit le problème matériel ou logiciel que vous rencontrez, F@stochePC11 se déplace chez vous pour solutionner votre problème.</p>
             </div>
-            <div class="col-sm">
-                <img class="imageHome" src="images/initiation.jpg" alt="initiation informatique">
-                  <h4>Initiation à l'informatique</h4>
+            <figure class="col-sm">
+                <img class="imageHome" src="images/initiation.jpg" alt="Image qui défini la catégorie initiation informatique">
+                  <figcaption>Initiation à l'informatique</figcaption>
                     <p class="textHome">Apprenez les bases de l'informatique, pour utiliser sans effort votre ordinateur fixe ou portable sous Windows. Apprenez à utiliser internet.</p>
-            </div>
-            <div class="col-sm">
-                <img class="imageHome" src="images/sauvegarde.jpg" alt="sauvegarde informatique">
-                  <h4>Analyse et sauvegarde</h4>
+            </figure>
+            <figure class="col-sm">
+                <img class="imageHome" src="images/sauvegarde.jpg" alt="Image qui défini la catégorie sauvegarde informatique">
+                  <figcaption>Analyse et sauvegarde</figcaption>
                     <p class="textHome">Analyse et suppression des virus. Sauvegarde en toute sécurité de vos données.</p>
-            </div>
+            </figure>
         </div>
     </section>
 

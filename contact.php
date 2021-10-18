@@ -1,9 +1,8 @@
-<?php require 'menu.php'; 
-include ('fonctions.inc.php');
-?>
+<?php require 'menu.php'; ?>
+<head>
+    <title>FastochePC11 - Contact</title>
+</head>
 
-
-<title>CONTACT</title>
  
 <section class="container">
     <h1>CONTACT</h1>
@@ -18,16 +17,14 @@ include ('fonctions.inc.php');
         <div class="mb-3">
             <label for="validationName" class="form-label">Votre prénom</label>
                 <div class="input-group">
-                    <input type="text" name="validationName" class="form-control" value="<?php echo vers_formulaire1($validationName) ?>" aria-describedby="Votre prénom" autofocus required> 
-                    <?php if(empty($erreur)) echo '<p class="error">', $erreur, '</p>' ?>
+                    <input type="text" name="validationName" class="form-control" value="" aria-describedby="Votre prénom" autofocus required> 
                 </div>
                 
         </div>
 
         <div class="mb-3">
             <label for="validationInputEmail" class="form-label">Votre adresse de messagerie</label>
-            <input type="email" name="validationInputEmail" class="form-control" value="<?php echo vers_formulaire2($validationInputEmail) ?>" aria-describedby="Votre Email" required>
-            <?php if(empty($erreur)) echo '<p class="error">', $erreur, '</p>' ?>
+            <input type="email" name="validationInputEmail" class="form-control" value="" aria-describedby="Votre Email" required>
         </div>
 
         <div class="mb-3">
@@ -41,14 +38,12 @@ include ('fonctions.inc.php');
 
         <div class="mb-3">
             <label for="validationMessage">Votre message</label>
-            <textarea class="form-control" name="validationMessage" value="<?php echo vers_formulaire3($validationMessage) ?>" aria-describedby="Votre message" required></textarea> 
-            <?php if(empty($erreur)) echo '<p class="error">', $erreur, '</p>' ?>
+            <textarea class="form-control" name="validationMessage" value="" aria-describedby="Votre message" required></textarea> 
         </div>
   
         <div class="mb-3 form-check">
-            <input class="form-check-input" type="checkbox" value="<?php echo ($validationTerms) ?>" required>
+            <input class="form-check-input" type="checkbox" value="" required>
             <label for="validationTerms" class="form-check-label" for="invalidCheck">Accepte la politique de confidentialité et les mentions légales du site F@stochePC11.com</label>
-            <?php if(empty($erreur)) echo '<p class="error">', $erreur, '</p>' ?>
         </div>
 
         <button type="submit" name="soumettre" value="OK" class="btn-contact btn-lg">ENVOYER</button>

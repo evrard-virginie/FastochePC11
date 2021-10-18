@@ -1,7 +1,10 @@
 <?php
 require 'menu.php'; ?>
-<!--Titre de la page dans l'onglet-->
-<title>Mentions légales</title>
+<head>
+    <!--Titre de la page dans l'onglet-->
+    <title>FastochePC11 - Mentions légales</title>
+</head>
+
 
 <section class="container">
     <!--Titre de la page-->
@@ -12,18 +15,18 @@ require 'menu.php'; ?>
     </div>
 
     <article class="loi">
-        <h3 class="article">En application de la loi n°2004-575 du 21 juin 2004 relative à la confiance dans l’économie numérique, vous trouverez ci-dessous les informations légales concernant ce site :</h3>
-            <h5 class="mentions">Protection des données personnelles</h5>
+        <h2 class="article">En application de la loi n°2004-575 du 21 juin 2004 relative à la confiance dans l’économie numérique, vous trouverez ci-dessous les informations légales concernant ce site :</h2>
+            <h3 class="mentions">Protection des données personnelles</h3>
                 <p>Conformément à la loi Informatique et Libertés du 6 janvier 1978 (art. 34), vous disposez d’un droit d’accès, de rectification ou de suppression concernant les données personnelles que nous pourrions être amenés à recueillir (données renseignées par vous).</p>
-            <h5 class="mentions">Droits d’auteur</h5>
+            <h3 class="mentions">Droits d’auteur</h3>
                 <p>Tous les articles et documents de ce site sont sous licence Créative Commons. Vous pouvez les télécharger et les utiliser à des fins pédagogiques. Nous vous demandons de conserver la source.</p>
                 <p>Malgré tous les soins apportés à la réalisation de ce site et à son actualisation régulière, des erreurs peuvent s’être glissées dans les informations et/ou documents présentés. Si vous en constatez n’hésitez pas à nous le faire savoir en nous contactant, nous procéderons aux rectifications correspondantes.</p>
-            <h5 class="mentions">Extraits droit français et européen sur le développement et la copie de sauvegarde</h5>
-                <h6>Art L122-4</h6>
+            <h3 class="mentions">Extraits droit français et européen sur le développement et la copie de sauvegarde</h3>
+                <h4>Art L122-4</h4>
                     <p>Toute représentation ou reproduction intégrale ou partielle faite sans le consentement de l’auteur ou de ses ayants droit ou ayants cause est illicite.</p>
                     <p>Il en est de même pour la traduction, l’adaptation ou la transformation, l’arrangement ou la reproduction par un art ou un procédé quelconque</p>
                     <p>(L.n°57-298 du 11 mars 1957, art 40)</p>
-                <h6>Art L126-6-1</h6>
+                <h4>Art L126-6-1</h4>
                     <p>I. (..)</p>
                     <p>II. La personne ayant le droit d’utiliser le logiciel peut en faire une copie de sauvegarde lorsque celle-ci est nécessaire pour préserver l’utilisation du logiciel.</p>
                     <p>(NDLR : Enfants turbulents, transport très fréquents, Nature du support etc. C’est à l’utilisateur de prouver la nécessité d’une copie de sauvegarde.)</p>
@@ -33,8 +36,8 @@ require 'menu.php'; ?>
                     <p>Note : Le droit de réaliser une copie de sauvegarde ne peut bénéficier qu’à l’utilisateur légitime du programme.</p>
                     <p>Ce dernier ne peut réaliser de copie qu’en un seul exemplaire.</p>
                     <p>La remise d’un double avec l’original interdit tout droit à copie de sauvegarde.</p>
-            <h5 class="mentions">Directive européenne 91/250 du 14-05-1991</h5>
-                <h6>Art 5</h6>
+            <h3 class="mentions">Directive européenne 91/250 du 14-05-1991</h3>
+                <h4>Art 5</h4>
                     <p>I. (..)</p>
                     <p>II. Une personne ayant le droit d’utiliser le programme d’ordinateur ne peut être empêchée par contrat d’en faire une copie de sauvegarde dans la mesure où celle-ci est nécessaire pour cette utilisation.</p>
                     <p>(NDLR : L’interdiction de procéder à une copie de sauvegarde n’est pas valable ni légale, la copie de sauvegarde est un droit essentiel de l’acheteur.)</p>
@@ -45,14 +48,15 @@ require 'menu.php'; ?>
                     <p>Renseignez-vous régulièrement sur la législation en vigueur dans votre pays avant toute commande/utilisation</p>
                     <p>La modification de consoles a pour unique but de faire fonctionner des jeux Imports sur vos consoles et les copies de sauvegarde prévues par la loi.</p>
                     <p>Toute autre utilisation est illégale et nous ne pouvons en être tenus responsables !</p>
-            <h5 class="mentions">Liens hypertextes</h5>
+            <h3 class="mentions">Liens hypertextes</h3>
                 <p>Ce site contient des liens hypertextes permettant l’accès à des sites qui ne sont pas édités par la responsable de ce site.</p>
                 <p>En conséquence la directrice de publication ne saurait être tenue pour responsable du contenu des sites auxquels l’internaute aurait ainsi accès.</p>
-            <h5 class="mentions">Éditeur responsable</h5>
+            <h3 class="mentions">Éditeur responsable</h3>
                 <p>Le présent site, son contenu est la propriété de F@stochePC11<br>La directrice de publication est Mme Sylvie BOULONNOIS</p>
-            <h5 class="mentions">Réalisation, hébergement du site</h5>
+            <h3 class="mentions">Réalisation, hébergement du site</h3>
                 <p>Le site est réalisé par Mme Evrard Virginie<br>Développeuse Web<br>SIREN: 808 383 335<br>SIRET: 808 383 335 00029<br>APE: 6201Z</p>
-                <p>Il est hébergé par Lws.fr<br>Société Ligne Web Services<br>10 rue Penthièvre<br>75008 Paris<br>France<br>Téléphone: +33 01 77 62 30 03</p>
+                <h4>Il est hébergé par Lws.fr</h4>
+                    <address>Société Ligne Web Services<br>10 rue Penthièvre<br>75008 Paris<br>France<br>Téléphone: +33 01 77 62 30 03</address>
     </article>
 </section>
    

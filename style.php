@@ -32,6 +32,17 @@ h1 {
     border-bottom: 2px solid #666;
     margin-bottom: 15px;
 }
+h2 {
+    font-size: 26px;
+}
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 18px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
 
 /* MENU */
 /* Couleur de fond du menu */
@@ -50,16 +61,24 @@ h1 {
 }
 /* Menu lien a propos et contact */
 div .collapse li .nav-link {
-    color:#dde7a9;
+    color: #dde7a9;
     font-size: 20px;
     margin-right: 40px;
 }
 div .collapse li .nav-link:hover {
     color: #fff;
 }
-li { 
+li {
     list-style-type: none;
+    display: inline-block;
 }
+@media (max-width: 700px) {
+    li {
+        display: block;
+        font-size: 15px;
+    }
+}
+
  
 /* PAGE ACCUEIL */
 /* h1 de la page d'accueil */
@@ -113,13 +132,17 @@ li {
 .imageHome{
     border-radius: 10px;
 }
-h4 {
-    margin-top: 25px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #666;
-}
 .textHome {
     margin-top: 15px;
+}
+figcaption {
+    border-bottom: 2px solid #666;
+    margin-top: 15px;
+    padding-bottom: 10px; 
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 /* PAGE A PROPOS */
@@ -164,9 +187,7 @@ h4 {
     margin-bottom: 20px;
     text-align: center;
 }
-h5 {
-    font-weight: bold;
-}
+
 #lienCNIL {
     color: #666;
 }
