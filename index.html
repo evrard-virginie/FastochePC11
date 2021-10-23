@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <!--meta pour le SEO-->
+        <meta name="description" content="F@stochePC11.com, entreprise de Mme Sylvie Boulonnois pour le dépannage et la maintenance informatique, s'adressant aux particuliers et aux professionnels.">
+        <meta name="keywords" content="dépannage, sécurité, maintenance, informatique, analyse, sauvegarde, entreprise, accueil">
+        <meta name="author" content="Sylvie Boulonnois">
+        <!--meta pour la visibilité de la page en fonction de la taille de l'écran-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Titre dans l'onglet de la page-->
+        <title>F@stochePC11 - Accueil</title>
+
+        <!--Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <!--Bootstrap Icon-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" >
+        <!--Javascript-->
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">   
+                    <!-- F@stochePC11 renvoi sur la page d'accueil -->
+                    <a class="navbar-brand" id="fastocheHome"  href="index.html">F@stochePC11</a>   
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul >
+                            <!-- Lien vers la page A propos -->
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="a_propos.html">A&#768; PROPOS </a>
+                            </li>
+                            <!-- Lien vers la page contact -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+        <header>
+            <h1 id="home">Bienvenue !</h1> 
+
+            <div id="presentation">
+                <p>Tout d'abord, je vous remercie pour votre visite sur mon site. Je vous invite à découvrir les différentes rubriques qui s'offrent à vous.</p>
+                <p>Le moyen le plus simple est de passer en revue la barre de menu. Vous pouvez aussi, aller d'une page à l'autre au gré de vos envies et de vos curiosités.</p>
+                <p>Dans quelques minutes, vous en saurez plus sur  moi et sur mes prestations.</p>
+            </div>
+        </header>
+
+        <!-- Carousel - vue mobile le carousel n'apparaît pas -->
+        <section class="container1">
+            <div id="carouselSlides" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/slide1.jpg" class="d-block w-90" alt="Image sur le service à la personne pour la réduction d'impôt de 50%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide2.jpg" class="d-block w-90" alt="Image d'illustration représentant l'initiation à l'informatique">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide3.jpg" class="d-block w-90" alt="Image d'illustration représentant le dépannage informatique">
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+        <!--Présentation des services de l'entreprise sur 3 colonnes-->
+        <section class="container" id="columm">
+            <div class="row">
+                <div class="col-sm">
+                    <img class="imageHome" src="images/depannage.jpg" alt="Image qui défini la catégorie depannage informatique">
+                    <figcaption>Dépannage informatique</figcaption>
+                        <p class="textHome">Quelque soit le problème matériel ou logiciel que vous rencontrez, F@stochePC11 se déplace chez vous pour solutionner votre problème.</p>
+                </div>
+                <figure class="col-sm">
+                    <img class="imageHome" src="images/initiation.jpg" alt="Image qui défini la catégorie initiation informatique">
+                    <figcaption>Initiation à l'informatique</figcaption>
+                        <p class="textHome">Apprenez les bases de l'informatique, pour utiliser sans effort votre ordinateur fixe ou portable sous Windows. Apprenez à utiliser internet.</p>
+                </figure>
+                <figure class="col-sm">
+                    <img class="imageHome" src="images/sauvegarde.jpg" alt="Image qui défini la catégorie sauvegarde informatique">
+                    <figcaption>Analyse et sauvegarde</figcaption>
+                        <p class="textHome">Analyse et suppression des virus. Sauvegarde en toute sécurité de vos données.</p>
+                </figure>
+            </div>
+        </section>
+
+        <footer>
+            <a href="https://www.linkedin.com/in/fastochepc11/?originalSubdomain=fr" target="_blank"><i class="bi bi-linkedin"></i></a> 
+            <p id="copyright">© 2021 F@stochePC11 | <a href="politique_confidentialite.html" target="_blank">Politique de confidentialité</a> | <a href="mentions_legales.html" target="_blank">Mentions légales</a></p>          
+        </footer>
+                
+        <!--Bootstrap Bundle avec Popper-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    </body>
+</html>
