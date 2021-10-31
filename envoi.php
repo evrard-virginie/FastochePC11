@@ -94,7 +94,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         //Destinataire et objet du message, déclarations des variables
-        $to = "contact@fastochepc11.fr";
+        $to = "xxx@xxx.xxx";
         $subject = "Formulaire de contact du site F@stochepc11";
 
         //Pour l'envoie du formulaire
