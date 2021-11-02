@@ -13,13 +13,13 @@
         <title>FastochePC11 - Confirmation d'envoi du formulaire de contact</title>
 
         <!--Bootstrap CSS-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!--Bootstrap Icon-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
         <!--CSS-->
         <link rel="stylesheet" type="text/css" media="screen" href="style.css" >
         <!--Javascript-->
-        <script type="text/javascript" src="script.js"></script>
+        <script src="script.js"></script>
     </head>
 
     <body>
@@ -36,7 +36,7 @@
                         <ul >
                             <!-- Lien vers la page A propos -->
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="a_propos.html">A&#768; PROPOS </a>
+                                <a class="nav-link active" aria-current="page" href="a_propos.html">À PROPOS </a>
                             </li>
                             <!-- Lien vers la page contact -->
                             <li class="nav-item">
@@ -61,23 +61,13 @@
             <p id="copyright">© 2021 F@stochePC11 | <a href="politique_confidentialite.html" target="_blank">Politique de confidentialité</a> | <a href="mentions_legales.html" target="_blank">Mentions légales</a></p>          
         </footer>
                 
-        <!--Bootstrap Bundle avec Popper-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <!-- Bootstrap JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
     
 <?php    
-    //Traitements pour l'envoi du formulaire
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        //Récupération des données du formulaire
-        $name = test_input($_POST["name"]);
-        $email = test_input($_POST["E-mail"]);
-        $object = test_input($_POST["object"]);
-        $message = test_input($_POST["message"]);
-        $validationTerms = test_input($_POST['validationTerms']);
-
-    }
-
+  
     //Supprimez les caractères inutiles des données utilisateur avec la fonction trim
     //Supprimez les barres obliques (\) des données utilisateur avec la fonction stripslashes
     //La fonction htmlspecialchars convertit les caractères spéciaux en entités HTML, cela empêche les attaques du type Cross-site Scripting
@@ -93,8 +83,14 @@
     //Si oui récupérer les valeurs et le valider, si non ignoré la validation et affichez le formulaire vierge
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
+        //Récupération des données du formulaire
+        $name = test_input($_POST["name"]);
+        $email = test_input($_POST["email"]);
+        $object = test_input($_POST["object"]);
+        $message = test_input($_POST["message"]);
+        
         //Destinataire et objet du message, déclarations des variables
-        $to = "contact@fastochepc11.fr";
+        $to = "contact@fastochepc11.com";
         $subject = "Formulaire de contact du site F@stochepc11";
 
         //Pour l'envoie du formulaire
@@ -114,10 +110,11 @@
 
         //En-tête de l'email
         $headers = 'From: '.$email.'\r\n'.
-        'Reply-To: '.$email.'\r\n'.
         'X-Mailer: PHP/' . phpversion();
         //Envoi email
         @mail($to, $subject,$email_message, $headers); 
     }
 ?>
 
+
+   
