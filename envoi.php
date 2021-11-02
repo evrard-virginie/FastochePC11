@@ -90,7 +90,7 @@
         $message = test_input($_POST["message"]);
         
         //Destinataire et objet du message, déclarations des variables
-        $to = "contact@fastochepc11.com";
+        $to = "xxx@xxx.xxx";
         $subject = "Formulaire de contact du site F@stochepc11";
 
         //Pour l'envoie du formulaire
