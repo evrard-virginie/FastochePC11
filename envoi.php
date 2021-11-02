@@ -61,7 +61,7 @@
             <p id="copyright">© 2021 F@stochePC11 | <a href="politique_confidentialite.html" target="_blank">Politique de confidentialité</a> | <a href="mentions_legales.html" target="_blank">Mentions légales</a></p>          
         </footer>
                 
-        <!-- Bootstrap JavaScript Bundle with Popper -->
+        <!--Bootstrap Bundle avec Popper-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
@@ -115,6 +115,3 @@
         @mail($to, $subject,$email_message, $headers); 
     }
 ?>
-
-
-   
