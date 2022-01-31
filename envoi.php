@@ -18,8 +18,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
         <!--CSS-->
         <link rel="stylesheet" type="text/css" media="screen" href="style.css" >
-        <!--Javascript-->
-        <script src="script.js"></script>
     </head>
 
     <body>
@@ -67,7 +65,32 @@
 </html>
     
 <?php    
-  
+    //$_SERVER["REQUEST_METHOD"] == "POST" permet de vérifier si le formulaire a été soumis
+    //Si oui récupérer les valeurs et le valider, si non ignoré la validation et affichez le formulaire vierge
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Vérifie si recaptcha est valide, si le champs "recaptcha-response" contient une valeur
+        if (empty($_POST['recaptcha-response'])) {
+            // On prépare l'url
+            $url = "https://www.google.com/recaptcha/api/siteverify?secret=6Lf4n0seAAAAAO143VJ_kI6bFY5fdCNg5AwSbNqd&response={$_POST['recaptcha-response']}";
+
+            // Vérifie si curl est installé
+            if(function_exists('curl_version')) {
+                $curl = curl_init($url);
+				curl_setopt($curl, CURLOPT_HEADER, false);
+				curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+				curl_setopt($curl, CURLOPT_TIMEOUT, 1);
+				curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+				$response = curl_exec($curl);
+            }else{
+                // Utilisation de file_get_contents
+			    $response = file_get_contents($url);
+            }
+            // Vérifie qu'on a une réponse
+            if(empty($response) || is_null($response)) {
+                header('Location: contact.html');
+            }
+        }
+    }
     //Supprimez les caractères inutiles des données utilisateur avec la fonction trim
     //Supprimez les barres obliques (\) des données utilisateur avec la fonction stripslashes
     //La fonction htmlspecialchars convertit les caractères spéciaux en entités HTML, cela empêche les attaques du type Cross-site Scripting
@@ -77,12 +100,9 @@
         $data = htmlspecialchars($data);
         return $data;
     }
+    //Gestion des erreurs / envoi formulaire
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    //Gestion des erreurs
-    //$_SERVER["REQUEST_METHOD"] == "POST" permet de vérifier si le formulaire a été soumis
-    //Si oui récupérer les valeurs et le valider, si non ignoré la validation et affichez le formulaire vierge
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        
         //Récupération des données du formulaire
         $name = test_input($_POST["name"]);
         $email = test_input($_POST["email"]);
@@ -90,10 +110,10 @@
         $message = test_input($_POST["message"]);
         
         //Destinataire et objet du message, déclarations des variables
-        $to = "xxx@xxx.xxx";
+        $to = "contact@fastochepc11.com";
         $subject = "Formulaire de contact du site F@stochepc11";
 
-        //Pour l'envoie du formulaire
+        //Envoi du formulaire
         $email_message = "Réponse du formulaire de contact.\n\n";
 
         //Nettoyage des champs

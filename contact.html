@@ -18,8 +18,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
         <!--CSS-->
         <link rel="stylesheet" type="text/css" media="screen" href="style.css" >
-        <!--Javascript-->
-        <script src="script.js"></script>
+        <!--JSON-->
+        <script type="application/json" src="captcha.json"></script>
     </head>
 
     <body>
@@ -55,7 +55,7 @@
                 <p>Vous souhaitez me confier votre projet ? </br>En savoir plus sur moi ? </br>N'hésitez pas à m'écrire via le formulaire ci-dessous.</p>
             </div>
 
-            <form name="RegForm" method="post" action="envoi.php" onsubmit="return formContact()">
+            <form method="post" action="envoi.php">
                 <div class="mb-3">
                     <label for="name" class="form-label">Votre prénom<span class="error"> *</span></label>
                         <div class="input-group">
@@ -87,10 +87,24 @@
                     <input class="form-check-input" id="validationTerms" checked type="checkbox" name="validationTerms" required>
                     <label for="validationTerms" class="form-check-label">Accepte la politique de confidentialité et les mentions légales du site F@stochePC11.com<span class="error"> *</span></label>
                 </div>
+                <div id="html_element"></div>
 
+                <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
                 <button type="submit" name="Envoyer" value="Envoyer" class="btn-contact btn-lg">ENVOYER</button>
                 <p class="error">Les champs avec * sont obligatoires.</p>
             </form>
+            <!--API JavaScript pour le recaptcha-->
+            <script src="https://www.google.com/recaptcha/api.js?render=6Lf4n0seAAAAALyAuG6pebn_dTvn2vZmoj7Efiud"></script>
+            <script>
+                function onClick(e) {
+                    e.preventDefault();
+                    grecaptcha.ready(function() {
+                        grecaptcha.execute('6Lf4n0seAAAAALyAuG6pebn_dTvn2vZmoj7Efiud', {action: 'submit'}).then(function(token) {
+                            document.getElementById("recaptchaResponse").value = token
+                        });
+                    });
+                }
+            </script>
         </section>
 
         <footer>
