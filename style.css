@@ -159,13 +159,15 @@ figcaption {
 }
 /* Bouton envoyer */
 .btn-contact {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     color: #fff;
     background-color: #dde7a9;
     border: #fff ;
+    border-radius: 5px;
     font-weight: bold;
     text-shadow: 2px 1px 1px #666;
     letter-spacing: 1px;
+    padding: 7px 10px 7px 10px;
 }
 .btn-contact:hover {
     color: #dde7a9;
